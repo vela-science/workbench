@@ -2,6 +2,15 @@
 
 Vela Workbench is the local continuation of a scientific Problem. It lets a researcher choose the exact source checkout, work with explicit local tools, capture evidence, prepare a Result for Submission, record a scoped Check, and ask a Repository authority for an attributed Decision through signed Vela. Git owns source, Entire owns sessions/checkpoints, problems.science owns shared discovery and coordination, and Vela Core owns scientific-state semantics and Repository authority.
 
+Within the wider autonomous-science programme, this repository remains the
+current local evidence-preparation and handoff product. It does not implement
+the programme scheduler, agent runtime, or a unified Frontiers product. See the
+[programme
+vision](https://github.com/williamjblair/autonomous-science/blob/master/VISION.md)
+and [repository
+map](https://github.com/williamjblair/autonomous-science/blob/master/docs/REPOSITORY_MAP.md)
+for the intended cross-repository architecture.
+
 ## Boundary
 
 Workbench does not own Git refs, Entire sessions, agent runtimes, Vela protocol objects, public discovery, hosted collaboration, or authority. It has no server, database, generic shell/filesystem/HTTP command, upload surface, remote WebView, provider app, or bundled Vela sidecar. The only persistent data is one Rust-owned preferences file containing clearable repository paths and selected tool paths; command output and selected evidence remain process-local and clear on exit or Clear recents.
